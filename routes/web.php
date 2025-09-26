@@ -26,6 +26,6 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/todos', function () {
     return Inertia::render('Todos/Index');
-});
+})->name('todos.index');
 
 require __DIR__.'/auth.php';
